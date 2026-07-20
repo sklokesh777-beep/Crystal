@@ -10,7 +10,7 @@ from __future__ import annotations
 # ---------------------------------------------------------------------------
 # Account / capital
 # ---------------------------------------------------------------------------
-CAPITAL: float = 100_000.0          # total account size in USD
+CAPITAL: float = 1_000_000.0        # total account size in USD
 RISK_PER_TRADE: float = 0.01        # fraction of capital risked per trade (1%)
 MAX_POSITION_PCT: float = 0.10      # hard cap: no single position > 10% of capital
 MAX_CONCURRENT_POSITIONS: int = 8   # cap on simultaneous open trades

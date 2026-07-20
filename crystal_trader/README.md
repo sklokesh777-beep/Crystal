@@ -2,7 +2,7 @@
 
 A compact, robust **swing-trading analysis model** you run on your own PC.
 It scans a universe of US stocks for short-hold (**1-8 trading day**) mean-reversion
-setups, sizes each trade for a **$100,000** account, and gives you an **exact
+setups, sizes each trade for a **$1,000,000** account, and gives you an **exact
 stop-loss** and a **recommended (best) take-profit** for every idea. It also
 produces a deep **research dossier** for any single stock (fundamentals,
 technicals, earnings calendar, analyst targets, ownership, and news).
@@ -72,12 +72,12 @@ python run.py exit AAPL --entry-date 2026-07-14
 ### Example: a trade plan
 
 ```
-TRADE PLAN - AAPL   (capital $100,000, risk 1.0%)
+TRADE PLAN - AAPL   (capital $1,000,000, risk 1.0%)
   Entry (ref)      : 326.6
   STOP-LOSS        : 310.40   (4.96% away)
-  Shares           : 30
-  Notional         : $9,798.00  (9.8% of capital)
-  Dollar risk      : $486.00
+  Shares           : 306
+  Notional         : $99,939.60  (9.99% of capital)
+  Dollar risk      : $4,957.20
   Take-profit ladder:
       1R : 342.80
       1.5R : 350.90  <== BEST
