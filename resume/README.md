@@ -10,8 +10,27 @@ Senior Team Member, India (Bengaluru)** · Job ID 210772851 · Alternative Fund 
 | `S-K-Lokesh-Resume.pdf` | **Upload this** to the JPMorganChase application (Oracle Recruiting Cloud) |
 | `S-K-Lokesh-Resume.docx` | Editable Word master — identical text, Times New Roman, one page |
 | `S-K-Lokesh-Resume.txt` | Plain text for pasting into web forms and for ATS keyword checks |
-| `preview.png` | Image of page 1 |
-| `resume_content.py` / `build_resume.py` | Content source + generator (`python3 build_resume.py` rebuilds all three) |
+| `S-K-Lokesh-Cover-Letter.pdf` | Attach alongside the resume where the form allows it |
+| `S-K-Lokesh-Cover-Letter.docx` / `.txt` | Editable Word master and plain text (for pasting into a form or email body) |
+| `preview.png` / `cover_preview.png` | Page images |
+| `resume_content.py` / `build_resume.py` | Resume content source + generator (`python3 build_resume.py`) |
+| `cover_letter_content.py` / `build_cover_letter.py` | Cover letter content + generator (`python3 build_cover_letter.py`) |
+
+Both documents share one typographic system (Liberation Serif / Times New Roman, same header block and
+rule), so they read as a matched set rather than two unrelated files.
+
+## Cover letter
+
+One page, 494 words, four substantive paragraphs. Structure: why this team; the 360 ONE fund-servicing
+evidence; the platform audit as the proof of a control mindset; AI-tool habit and NISM Series-VII; close.
+
+- Quotes the role title and **Job ID 210772851** exactly as posted, since it is read next to an Oracle
+  Recruiting Cloud application record.
+- Addressed to the campus recruiting team — no invented recipient name, which is correct for a
+  programme reviewed on a rolling basis.
+- States "simulated paper portfolio" explicitly and carries **no realised P&L or win-rate claim**, for
+  the same reasons as the resume.
+- Verified one page in both PDF and Word rendering; PDF and DOCX text identical (1.0000).
 
 ## Verified build checks
 
