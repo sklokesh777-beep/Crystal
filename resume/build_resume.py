@@ -53,7 +53,7 @@ NAME_SIZE = 19.0
 CONTACT_SIZE = 9.0
 HEAD_SIZE = 10.2
 BODY_SIZE = 9.45
-BODY_LEAD = 11.1
+BODY_LEAD = 11.0
 SUB_SIZE = 8.9
 
 INK = "#000000"
@@ -62,7 +62,7 @@ RULE = "#000000"
 PAGE_W, PAGE_H = A4
 MARGIN_X = 14.0 * mm
 MARGIN_TOP = 11.0 * mm
-MARGIN_BOTTOM = 9.0 * mm
+MARGIN_BOTTOM = 7.5 * mm
 FRAME_W = PAGE_W - 2 * MARGIN_X
 
 TAG_RE = re.compile(r"<[^>]+>")
@@ -335,7 +335,7 @@ def build_docx(path=OUT_BASE + ".docx"):
     sec.page_height = Inches(11.69)
     sec.left_margin = sec.right_margin = Inches(0.55)
     sec.top_margin = Inches(0.43)
-    sec.bottom_margin = Inches(0.35)
+    sec.bottom_margin = Inches(0.30)
     usable = sec.page_width - sec.left_margin - sec.right_margin
 
     def tabbed(markup_left, markup_right, size=BODY_SIZE, italic=False):
