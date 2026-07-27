@@ -1,0 +1,49 @@
+S K LOKESH
+Bengaluru, Karnataka, India | +91 99865 78113 | sklokesh777@gmail.com | linkedin.com/in/s-k-lokesh-a09160313
+
+SUMMARY
+Final-year B.Com student (Class of 2027) and CFA Level I candidate applying to Commercial & Investment Bank Research & Analytics - Securities Services (Alternative Fund Services) in Bengaluru, with the aim of building a career in fund accounting, portfolio accounting, NAV production, financial reporting and investor reporting. Delivered portfolio analytics at India's largest listed wealth manager: automated rolling-return computation across 120+ funds in Python (~90% less manual effort), reconstructed and reconciled 5+ years of transaction history for cost-basis accuracy, and modelled PMS/AIF fee structures that surfaced INR 4.2 lakh of annual client savings. Brings quantitative rigour, a controls-first approach to reporting accuracy, and daily hands-on use of AI-enabled research tools.
+
+EDUCATION
+Bachelor of Commerce (B.Com) | St. Joseph's College of Commerce (Autonomous), Bengaluru  |  2024 - 2027
+Affiliated to Bengaluru City University | NAAC A++ accredited (4th cycle) | Final year; expected graduation 2027
+Relevant coursework: Financial Accounting, Corporate Finance, Investment Management, Business Statistics, Taxation, Economics
+
+Class XII - Pre-University (Commerce) | Seshadripuram Independent PU College | Karnataka State Board  |  93% | 2024
+
+Class X - Secondary School Certificate (SSLC) | St. Anthony's Boys' High School | Karnataka State Board  |  80% | 2022
+
+PROFESSIONAL EXPERIENCE
+360 ONE Portfolio Managers Limited | Finance Intern - Wealth Management  |  May - Jun 2026
+India's largest listed wealth manager (NSE/BSE listed; INR 6 lakh crore+ client assets); PMS, AIF and mutual fund solutions for HNI and family-office clients | Bengaluru, India
+- Portfolio analytics & automation: Engineered a Python framework (pandas, openpyxl) that computed 6M/1Y/3Y/5Y rolling returns from NAV histories for 120+ mutual funds across Large, Mid, Small and Flexi Cap categories, cutting manual data processing time by ~90% and standardising output for advisory review.
+- Reconciliation & cost-basis analysis: Reconstructed 5+ years of transaction history from Script Cashflow reports to reconcile cost basis and compute LTCG/STCG liability on 6 equity instruments held by an HNI family portfolio, applying post-Budget 2024 tax rates.
+- Fee & expense modelling: Modelled PMS/AIF fee structures across 9 holdings (1.94% weighted-average fixed fee) and quantified an INR 4.2 lakh annual saving by moving a 10-fund mutual fund portfolio from regular to direct plans.
+- Reference data & Bloomberg: Maintained a 4,000+ security BSE/NSE dataset using Bloomberg BDH/BDP formulas and mapped client holdings against internal model portfolios to generate Buy/Sell/Hold recommendations for Investment Counsellors.
+- Client reporting & presentation: Co-authored a 30+ slide institutional deck on active vs. passive fund performance - rolling alpha, hit rates and alpha dispersion by market-cap segment - used by advisory teams in client discussions.
+
+Guanella Preethi Nivas (Preethi Nivas Trust) | Social Intern  |  May 2025 (60 hours)
+Charitable home for destitute elderly men run by The Guanellian Society; 50+ residents | Bengaluru, India
+- Records & documentation: Rebuilt resident records, daily activity logs and medical-room inventory for a 50+ resident facility - categorising and labelling pharmaceutical supplies - improving retrieval speed during medication rounds and emergency response.
+- Controls, compliance & safety review: Ran facility safety audits - fire-extinguisher expiry checks, hazard documentation and disaster-awareness signage - to support safety compliance, and prepared the PowerPoint decks and structured reports used by staff.
+
+LEADERSHIP & EXTRACURRICULAR
+National Service Scheme (NSS), St. Joseph's College of Commerce | Treasurer (elected)  |  Bengaluru, India
+- Elected treasurer of a 100+ member unit; own the annual budget, fund allocation and expense records across unit programmes.
+- Completed 2 rural exposure camps (8 days each), running community development surveys and field projects alongside volunteer teams.
+
+Independent Equity Markets Research | Self-directed  |  Ongoing (2+ years)
+- Active retail investor applying a multi-factor screening framework (valuation, momentum, quality) across Indian equities using Screener.in, Chartink and TradingView; maintain a personal watchlist and trade log.
+
+CERTIFICATIONS & TECHNICAL SKILLS
+Certifications: CFA Program - Level I candidate, February 2027 exam window (CFA Institute) | Excel Skills for Business - Macquarie University (Coursera) | Soft Skills Development - NPTEL / SWAYAM (IIT)
+Fund & Portfolio Analytics: Rolling returns from NAV histories, portfolio mapping vs. model portfolios, active vs. passive performance analysis (alpha, hit rate, dispersion), fee & expense modelling (PMS/AIF), reconciliations, cost-basis analysis, capital gains taxation (LTCG/STCG), financial statement analysis
+Technical: Python (pandas, openpyxl), Advanced Excel (PivotTables, VLOOKUP, macros), Power BI, PowerPoint, Word
+Platforms & Data: Bloomberg Terminal (BDH/BDP), Screener.in, Chartink, TradingView
+AI-Enabled Workflow: ChatGPT and Claude for research synthesis, data clean-up, document drafting and workflow automation
+
+ADDITIONAL INFORMATION
+Strengths: Attention to detail and data accuracy | quality review discipline | deadline delivery
+Working style: Clear written and verbal communication | collaboration across diverse teams | initiative and intellectual curiosity
+Languages: English (professional) | Tamil (native) | Kannada (conversational) | Hindi (conversational)
+Additional: Expected graduation 2027 | open to full-time roles in Bengaluru | interests: fine arts, home gardening
