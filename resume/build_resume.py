@@ -52,8 +52,8 @@ FONT = "Serif"
 NAME_SIZE = 19.0
 CONTACT_SIZE = 9.0
 HEAD_SIZE = 10.2
-BODY_SIZE = 9.5
-BODY_LEAD = 11.35
+BODY_SIZE = 9.45
+BODY_LEAD = 11.1
 SUB_SIZE = 8.9
 
 INK = "#000000"
@@ -153,7 +153,7 @@ def pdf_styles():
                                   textColor=INK),
         "head": ParagraphStyle("head", fontName=FONT + "-Bold", fontSize=HEAD_SIZE,
                                leading=HEAD_SIZE + 1.5, textColor=INK,
-                               spaceBefore=6.0, spaceAfter=1.0),
+                               spaceBefore=4.0, spaceAfter=1.0),
         "profile": ParagraphStyle("profile", alignment=TA_JUSTIFY, **base),
         "left": ParagraphStyle("left", alignment=TA_LEFT, **base),
         "right": ParagraphStyle("right", alignment=TA_RIGHT, **base),
@@ -229,11 +229,14 @@ def build_pdf(path=OUT_BASE + ".pdf"):
             for bullet in block.get("bullets", []):
                 group.append(P(bullet, st["bullet"], bulletText="\u2022"))
             if block["type"] == "kvlines":
+                # kv lines flow line-by-line: keeping a whole skills block together
+                # can push it to a second page and waste half of page one
                 for label, value in block["lines"]:
-                    group.append(P(f"<b>{label}:</b> {value}", st["kv"]))
+                    story.append(P(f"<b>{label}:</b> {value}", st["kv"]))
+                continue
             story.append(KeepTogether(group))
             if block is not section["blocks"][-1]:
-                story.append(Spacer(1, 3.6))
+                story.append(Spacer(1, 3.2))
 
     doc = BaseDocTemplate(
         path, pagesize=A4,
@@ -379,7 +382,7 @@ def build_docx(path=OUT_BASE + ".docx"):
     # ---- sections
     for section in SECTIONS:
         h = d.add_paragraph()
-        _set_spacing(h, 6.0, 2.6, line=HEAD_SIZE + 1.5)
+        _set_spacing(h, 4.0, 2.6, line=HEAD_SIZE + 1.5)
         r = h.add_run(section["heading"].upper())
         r.font.name = DOCX_FONT
         r.font.size = Pt(HEAD_SIZE)
@@ -389,7 +392,7 @@ def build_docx(path=OUT_BASE + ".docx"):
         for idx, block in enumerate(section["blocks"]):
             if idx:
                 spacer = d.add_paragraph()
-                _set_spacing(spacer, 0, 0, line=3.6)
+                _set_spacing(spacer, 0, 0, line=3.2)
             if block.get("left") is not None:
                 tabbed(block["left"], block.get("right"))
             if block.get("sub"):

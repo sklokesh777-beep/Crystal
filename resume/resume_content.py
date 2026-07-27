@@ -1,16 +1,31 @@
 """
 Single source of truth for S K Lokesh's resume content.
 
-Every line below is traceable to one of the two source resumes supplied by the
-candidate (the 2nd-year version and the final-year version) or to a publicly
-verifiable fact about an institution named in them:
+Every line below is traceable to one of the candidate's source resumes, to the
+trading-suite codebase in this repository (`trading_suite_v9.zip`), or to a
+publicly verifiable fact about an institution named here:
 
   * SJCC affiliation / NAAC grade -> sjcc.edu.in official syllabus & brochure PDFs
     ("An Autonomous Institution affiliated to Bengaluru City University",
      "Accredited with A++ Grade by NAAC in 4th Cycle (CGPA of 3.75/4)")
   * 360 ONE listing status         -> listed on NSE & BSE since 19 Sep 2019
-  * 360 ONE scale                  -> reported assets above INR 6.6 lakh crore (Aug 2025 press)
+  * 360 ONE scale                  -> reported assets above INR 6.6 lakh crore (Aug 2025 press),
                                       stated conservatively as "INR 6 lakh crore+"
+  * Trading platform figures       -> measured from the repository itself:
+      ~6,528 lines of Python across 72 files; universes of 504 and 1,001 symbols;
+      backtest window 2010-01-05 to 2026-07-15 (16.5y); 8,665 RSI-2 trades;
+      confluence-score win rates flat at 59.5-62.2% across score buckets;
+      500-name CAGR +5.32% vs 1,000-name +1.16%; graduated regime filter
+      max drawdown -34.5% -> -28.8%; cost stress 2x -> +1.2% CAGR, 3x -> -2.9%;
+      Monte Carlo over 250 ten-day windows; walk-forward 3y train / 1y test.
+
+  NOTE ON P&L: no profit or return figure from the paper-trading tool appears on
+  this resume. `data/my_trades.csv` is empty and the +10.09% report in
+  `output/report.md` was generated from `data/sample_trades.csv`, a synthetic
+  60-trade demo whose exits are back-solved from intended R-multiples, on a
+  $100,000 SIMULATED TradingView account. Presenting that as realised profit
+  would be indefensible in interview. The resume claims engineering, validation
+  methodology and research findings only - all of which are real and checkable.
 
 Target role: JPMorganChase - 2027 Commercial & Investment Bank, Research &
 Analytics, Securities Services (Alternative Fund Services) - Full-Time Senior
@@ -32,13 +47,11 @@ CONTACT = [
 
 PROFILE = (
     "Final-year B.Com student (Class of 2027) and CFA Level I candidate applying to Commercial &amp; Investment Bank "
-    "Research &amp; Analytics \u2013 Securities Services (Alternative Fund Services) in Bengaluru, with the aim of building a "
-    "career in fund accounting, portfolio accounting, NAV production, financial reporting and investor reporting. "
-    "Delivered portfolio analytics at "
-    "India's largest listed wealth manager: automated rolling-return computation across 120+ funds in Python (~90% less "
-    "manual effort), reconstructed and reconciled 5+ years of transaction history for cost-basis accuracy, and modelled "
-    "PMS/AIF fee structures that surfaced INR 4.2 lakh of annual client savings. Brings quantitative rigour, a "
-    "controls-first approach to reporting accuracy, and daily hands-on use of AI-enabled research tools."
+    "Research &amp; Analytics \u2013 Securities Services (Alternative Fund Services), Bengaluru, with the aim of building a career "
+    "in fund accounting, portfolio accounting, NAV production, financial reporting and investor reporting. Delivered "
+    "portfolio analytics at India's largest listed wealth manager \u2013 rolling returns for 120+ funds automated in Python "
+    "(~90% less manual effort) and PMS/AIF fee modelling worth INR 4.2 lakh a year to a client \u2013 and independently built a "
+    "6,500-line Python backtesting platform validated across 16.5 years of market data."
 )
 
 SECTIONS = [
@@ -50,10 +63,10 @@ SECTIONS = [
                 "type": "entry",
                 "left": "<b>Bachelor of Commerce (B.Com)</b>  |  St. Joseph's College of Commerce (Autonomous), Bengaluru",
                 "right": "<b>2024 \u2013 2027</b>",
-                "sub": "Affiliated to Bengaluru City University  &#183;  NAAC A++ accredited (4th cycle)  &#183;  Final year; expected graduation 2027",
+                "sub": "Affiliated to Bengaluru City University  &#183;  NAAC A++ accredited  &#183;  Final year, expected graduation 2027",
                 "lines": [
-                    "<b>Relevant coursework:</b> Financial Accounting, Corporate Finance, Investment Management, "
-                    "Business Statistics, Taxation, Economics",
+                    "<b>Relevant coursework:</b> Financial Accounting, Corporate Finance, Investment Management, Business Statistics, "
+                    "Taxation, Economics",
                 ],
             },
             {
@@ -78,43 +91,63 @@ SECTIONS = [
                 "type": "entry",
                 "left": "<b>360 ONE Portfolio Managers Limited</b>  |  Finance Intern \u2013 Wealth Management",
                 "right": "<b>May \u2013 Jun 2026</b>",
-                "sub": "India's largest listed wealth manager (NSE/BSE listed; INR 6 lakh crore+ client assets); PMS, AIF and "
-                       "mutual fund solutions for HNI and family-office clients  &#183;  Bengaluru, India",
+                "sub": "India's largest listed wealth manager (NSE/BSE listed; INR 6 lakh crore+ client assets)  &#183;  Bengaluru, India",
                 "bullets": [
                     "<b>Portfolio analytics &amp; automation:</b> Engineered a Python framework (pandas, openpyxl) that computed "
                     "6M/1Y/3Y/5Y rolling returns from NAV histories for 120+ mutual funds across Large, Mid, Small and Flexi Cap "
-                    "categories, cutting manual data processing time by ~90% and standardising output for advisory review.",
+                    "categories, cutting manual data processing time by ~90%.",
 
-                    "<b>Reconciliation &amp; cost-basis analysis:</b> Reconstructed 5+ years of transaction history from Script "
-                    "Cashflow reports to reconcile cost basis and compute LTCG/STCG liability on 6 equity instruments held by an "
-                    "HNI family portfolio, applying post-Budget 2024 tax rates.",
+                    "<b>Reconciliation &amp; cost basis:</b> Reconstructed 5+ years of transaction history from Script Cashflow reports to "
+                    "reconcile cost basis and compute LTCG/STCG liability on 6 equity instruments in an HNI family portfolio at "
+                    "post-Budget 2024 rates.",
 
                     "<b>Fee &amp; expense modelling:</b> Modelled PMS/AIF fee structures across 9 holdings (1.94% weighted-average "
                     "fixed fee) and quantified an INR 4.2 lakh annual saving by moving a 10-fund mutual fund portfolio from regular "
                     "to direct plans.",
 
-                    "<b>Reference data &amp; Bloomberg:</b> Maintained a 4,000+ security BSE/NSE dataset using Bloomberg BDH/BDP "
-                    "formulas and mapped client holdings against internal model portfolios to generate Buy/Sell/Hold "
-                    "recommendations for Investment Counsellors.",
+                    "<b>Reference data &amp; Bloomberg:</b> Maintained a 4,000+ security BSE/NSE dataset with Bloomberg BDH/BDP formulas and "
+                    "mapped client holdings against model portfolios to generate Buy/Sell/Hold calls for Investment Counsellors.",
 
-                    "<b>Client reporting &amp; presentation:</b> Co-authored a 30+ slide institutional deck on active vs. passive "
-                    "fund performance – rolling alpha, hit rates and alpha dispersion by market-cap segment \u2013 used by advisory "
-                    "teams in client discussions.",
+                    "<b>Client reporting:</b> Co-authored a 30+ slide institutional deck on active vs. passive fund performance (rolling "
+                    "alpha, hit rates, alpha dispersion by market-cap segment) used by advisory teams with clients.",
                 ],
             },
             {
                 "type": "entry",
                 "left": "<b>Guanella Preethi Nivas (Preethi Nivas Trust)</b>  |  Social Intern",
                 "right": "<b>May 2025 (60 hours)</b>",
-                "sub": "Charitable home for destitute elderly men run by The Guanellian Society; 50+ residents  &#183;  Bengaluru, India",
+                "sub": "Charitable home for 50+ destitute elderly residents, run by The Guanellian Society  &#183;  Bengaluru, India",
                 "bullets": [
-                    "<b>Records &amp; documentation:</b> Rebuilt resident records, daily activity logs and medical-room inventory for a "
-                    "50+ resident facility – categorising and labelling pharmaceutical supplies – improving retrieval speed during "
-                    "medication rounds and emergency response.",
+                    "Rebuilt resident records, activity logs and medical-room inventory, and ran safety audits (extinguisher expiry, hazard "
+                    "documentation, signage) to support compliance, preparing the reporting decks used by staff.",
+                ],
+            },
+        ],
+    },
+    # ------------------------------------------------------- QUANTITATIVE PROJECT
+    {
+        "heading": "QUANTITATIVE RESEARCH PROJECT",
+        "blocks": [
+            {
+                "type": "entry",
+                "left": "<b>Equity Backtesting &amp; Screening Platform</b>  |  Independent Python project, AI-assisted build",
+                "right": "<b>2026</b>",
+                "sub": "6,500-line research stack, 10 build iterations; run daily to screen a 500-name US universe for a USD 100,000 "
+                       "simulated paper-trading portfolio  &#183;  also a 2+ year retail investor in Indian equities",
+                "bullets": [
+                    "<b>Engineering:</b> Built a modular platform (pandas, NumPy, yfinance, Matplotlib) spanning data ingestion, 12 technical "
+                    "indicators, a backtest engine, ATR stops, 1%-risk sizing, performance analytics (Sharpe, Sortino, profit factor, "
+                    "expectancy, R-multiples) and automated reporting.",
 
-                    "<b>Controls, compliance &amp; safety review:</b> Ran facility safety audits \u2013 fire-extinguisher expiry checks, hazard "
-                    "documentation and disaster-awareness signage \u2013 to support safety compliance, and prepared the PowerPoint "
-                    "decks and structured reports used by staff.",
+                    "<b>Validation methodology:</b> Tested 7 long and short strategies over 16.5 years (2010\u20132026) across 504- and "
+                    "1,001-symbol universes and 8,600+ simulated trades: signals read at the close and filled at the next open to "
+                    "remove look-ahead, commission and slippage on every fill, walk-forward 3y-train/1y-test windows, and Monte-Carlo "
+                    "sampling of 250 ten-day windows.",
+
+                    "<b>Findings, negative results included:</b> Showed a multi-indicator confluence score did not lift win rate "
+                    "(flat 60\u201362% across score buckets) and that widening the universe from 504 to 1,001 names cut CAGR 5.3% to "
+                    "1.2%; a graduated regime filter cut max drawdown \u221234.5% to \u221228.8%, and the edge disappeared at 2\u20133x assumed costs \u2013 "
+                    "reported with survivorship-bias and regime caveats rather than optimised results.",
                 ],
             },
         ],
@@ -128,20 +161,8 @@ SECTIONS = [
                 "left": "<b>National Service Scheme (NSS), St. Joseph's College of Commerce</b>  |  Treasurer (elected)",
                 "right": "<b>Bengaluru, India</b>",
                 "bullets": [
-                    "Elected treasurer of a 100+ member unit; own the annual budget, fund allocation and expense records across unit "
-                    "programmes.",
-
-                    "Completed 2 rural exposure camps (8 days each), running community development surveys and field projects "
-                    "alongside volunteer teams.",
-                ],
-            },
-            {
-                "type": "entry",
-                "left": "<b>Independent Equity Markets Research</b>  |  Self-directed",
-                "right": "<b>Ongoing (2+ years)</b>",
-                "bullets": [
-                    "Active retail investor applying a multi-factor screening framework (valuation, momentum, quality) across Indian "
-                    "equities using Screener.in, Chartink and TradingView; maintain a personal watchlist and trade log.",
+                    "Elected treasurer of a 100+ member unit; own the annual budget, fund allocation and expense records. Completed "
+                    "2 rural exposure camps (8 days each) running community development surveys and field projects.",
                 ],
             },
         ],
@@ -154,38 +175,24 @@ SECTIONS = [
                 "type": "kvlines",
                 "lines": [
                     ("Certifications",
-                     "CFA Program \u2013 Level I candidate, February 2027 exam window (CFA Institute)  &#183;  Excel Skills for Business \u2013 "
-                     "Macquarie University (Coursera)  &#183;  Soft Skills Development \u2013 NPTEL / SWAYAM (IIT)"),
+                     "CFA Level I candidate \u2013 Feb 2027 window (CFA Institute)  &#183;  NISM Series-VII: Securities Operations &amp; "
+                     "Risk Management \u2013 in preparation  &#183;  Excel Skills for Business \u2013 Macquarie University (Coursera)  &#183;  "
+                     "Soft Skills Development \u2013 NPTEL / SWAYAM (IIT)"),
                     ("Fund &amp; Portfolio Analytics",
-                     "Rolling returns from NAV histories, portfolio mapping vs. model portfolios, active vs. passive performance "
-                     "analysis (alpha, hit rate, dispersion), fee &amp; expense modelling (PMS/AIF), reconciliations, cost-basis "
-                     "analysis, capital gains taxation (LTCG/STCG), financial statement analysis"),
+                     "Rolling returns from NAV histories, portfolio mapping vs. model portfolios, performance analysis (alpha, hit "
+                     "rate, dispersion), fee &amp; expense modelling (PMS/AIF), reconciliations, cost basis, capital gains tax, "
+                     "financial statement analysis"),
                     ("Technical",
-                     "Python (pandas, openpyxl), Advanced Excel (PivotTables, VLOOKUP, macros), Power BI, PowerPoint, Word"),
-                    ("Platforms &amp; Data",
-                     "Bloomberg Terminal (BDH/BDP), Screener.in, Chartink, TradingView"),
+                     "Python (pandas, NumPy, openpyxl, Matplotlib), Advanced Excel (PivotTables, VLOOKUP, macros), Power BI, "
+                     "PowerPoint, Bloomberg Terminal (BDH/BDP), Screener.in, Chartink, TradingView"),
                     ("AI-Enabled Workflow",
-                     "ChatGPT and Claude for research synthesis, data clean-up, document drafting and workflow automation"),
-                ],
-            },
-        ],
-    },
-    # -------------------------------------------------------------- ADDITIONAL
-    {
-        "heading": "ADDITIONAL INFORMATION",
-        "blocks": [
-            {
-                "type": "kvlines",
-                "lines": [
+                     "ChatGPT and Claude for code generation and review, research synthesis, data clean-up and document drafting"),
                     ("Strengths",
-                     "Attention to detail and data accuracy  &#183;  quality review discipline  &#183;  deadline delivery"),
-                    ("Working style",
-                     "Clear written and verbal communication  &#183;  collaboration across diverse teams  &#183;  initiative and "
-                     "intellectual curiosity"),
+                     "Attention to detail and data accuracy  &#183;  quality review and control discipline  &#183;  clear "
+                     "communication  &#183;  collaboration  &#183;  intellectual curiosity"),
                     ("Languages",
-                     "English (professional)  &#183;  Tamil (native)  &#183;  Kannada (conversational)  &#183;  Hindi (conversational)"),
-                    ("Additional",
-                     "Expected graduation 2027  &#183;  open to full-time roles in Bengaluru  &#183;  interests: fine arts, home gardening"),
+                     "English (professional)  &#183;  Tamil (native)  &#183;  Kannada and Hindi (conversational)  &#183;  interests: "
+                     "fine arts, home gardening"),
                 ],
             },
         ],
