@@ -25,6 +25,13 @@ genuinely done, simply framed in the vocabulary of the work.
 
 If the attached JD turns out to be a technology or consulting track, the ordering
 should change: the analytics/automation platform moves above the internship.
+
+EDITORIAL RULE (applied deliberately): nothing on this page restates the drive's
+eligibility criteria as if it were a selling point. No "applying for the Analyst
+role", no "no active backlogs", and the graduation year appears once, in the
+education block where a reader structurally expects it. Eligibility is proved by
+the registration form and the transcript, not by resume copy. The summary opens
+on quantified outcomes and only then identifies the candidate.
 """
 
 OUT_NAME = "S-K-Lokesh-Resume-Accenture"
@@ -44,13 +51,13 @@ CONTACT = [
 ]
 
 PROFILE = (
-    "Final-year B.Com student at St. Joseph's College of Commerce, graduating in 2027 with no active backlogs, "
-    "applying for the Analyst role at Accenture. Delivered finance operations and reporting work during an internship "
-    "at India's largest listed wealth manager: automated a recurring returns pack covering 120+ funds in Python "
-    "(~90% less manual effort), reconciled 5+ years of transaction history for cost-basis accuracy, and modelled fee "
-    "structures that surfaced INR 4.2 lakh of annual savings for one client. Independently built, audited and "
-    "remediated a 6,500-line Python analytics platform. Brings an automation-first instinct, a controls mindset around "
-    "reporting accuracy, and daily hands-on use of AI-enabled tools."
+    "Automated a recurring returns pack covering 120+ funds in Python (~90% less manual effort), reconciled 5+ years of "
+    "transaction history for cost-basis accuracy, and modelled fee structures that surfaced INR 4.2 lakh of annual "
+    "savings for a client \u2013 delivered during a finance internship at India's largest listed wealth manager. "
+    "Independently built, audited and remediated a 6,500-line Python analytics platform, closing seven defects "
+    "including an inverted risk structure in its own logic. Final-year B.Com student at St. Joseph's College of "
+    "Commerce, Bengaluru, with an automation-first instinct, a controls mindset around reporting accuracy, and daily "
+    "hands-on use of AI-enabled tools."
 )
 
 SECTIONS = [
@@ -62,8 +69,7 @@ SECTIONS = [
                 "type": "entry",
                 "left": "<b>Bachelor of Commerce (B.Com)</b>  |  St. Joseph's College of Commerce (Autonomous), Bengaluru",
                 "right": "<b>2024 \u2013 2027</b>",
-                "sub": "Affiliated to Bengaluru City University  &#183;  NAAC A++ accredited  &#183;  Final year, graduating 2027  "
-                       "&#183;  no active backlogs",
+                "sub": "Affiliated to Bengaluru City University  &#183;  NAAC A++ accredited  &#183;  Final year, graduating 2027",
                 "lines": [
                     "<b>Relevant coursework:</b> Financial Accounting, Corporate Finance, Investment Management, Business Statistics, "
                     "Taxation, Economics",

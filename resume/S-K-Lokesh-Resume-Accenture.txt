@@ -2,11 +2,11 @@ S K LOKESH
 Bengaluru, Karnataka, India | +91 99865 78113 | sklokesh777@gmail.com | linkedin.com/in/s-k-lokesh-a09160313
 
 SUMMARY
-Final-year B.Com student at St. Joseph's College of Commerce, graduating in 2027 with no active backlogs, applying for the Analyst role at Accenture. Delivered finance operations and reporting work during an internship at India's largest listed wealth manager: automated a recurring returns pack covering 120+ funds in Python (~90% less manual effort), reconciled 5+ years of transaction history for cost-basis accuracy, and modelled fee structures that surfaced INR 4.2 lakh of annual savings for one client. Independently built, audited and remediated a 6,500-line Python analytics platform. Brings an automation-first instinct, a controls mindset around reporting accuracy, and daily hands-on use of AI-enabled tools.
+Automated a recurring returns pack covering 120+ funds in Python (~90% less manual effort), reconciled 5+ years of transaction history for cost-basis accuracy, and modelled fee structures that surfaced INR 4.2 lakh of annual savings for a client - delivered during a finance internship at India's largest listed wealth manager. Independently built, audited and remediated a 6,500-line Python analytics platform, closing seven defects including an inverted risk structure in its own logic. Final-year B.Com student at St. Joseph's College of Commerce, Bengaluru, with an automation-first instinct, a controls mindset around reporting accuracy, and daily hands-on use of AI-enabled tools.
 
 EDUCATION
 Bachelor of Commerce (B.Com) | St. Joseph's College of Commerce (Autonomous), Bengaluru  |  2024 - 2027
-Affiliated to Bengaluru City University | NAAC A++ accredited | Final year, graduating 2027 | no active backlogs
+Affiliated to Bengaluru City University | NAAC A++ accredited | Final year, graduating 2027
 Relevant coursework: Financial Accounting, Corporate Finance, Investment Management, Business Statistics, Taxation, Economics
 
 Class XII - Pre-University (Commerce) | Seshadripuram Independent PU College | Karnataka State Board  |  93% | 2024

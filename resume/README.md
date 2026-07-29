@@ -139,8 +139,8 @@ led with **process automation, reconciliation, cost & fee analysis, data managem
 controls & defect remediation** — all genuine work, framed in the vocabulary of the role.
 
 Differences from the JPMC version:
-- Profile targets the Analyst role and states **graduating 2027, no active backlogs** (the two hard
-  eligibility gates) in the first sentence.
+- Summary opens on quantified outcomes (120+ funds automated, 5+ years reconciled, INR 4.2 lakh saved)
+  and only then identifies the candidate. It deliberately does **not** restate eligibility criteria.
 - Project section retitled **Analytics & Automation Project**, project renamed *Equity Analytics &
   Automation Platform*, and the controls/defect-remediation bullet promoted above the findings bullet.
 - Skills regrouped into *Automation & Analytics* and *Finance & Operations*; closes with openness to
@@ -158,6 +158,29 @@ internship; that is a five-minute change to `resume_content_accenture.py`.
    resume is subject to background verification. The resume reads **S K LOKESH**. If the PAN shows the
    initials expanded or the surname first, say so and the header will be matched to the legal name.
 2. **B.Com CGPA.** Accenture screens on degree, year of passing and CGPA. Still absent from both resumes.
-3. **No active backlogs** is asserted in the profile and education block — confirm it is accurate.
+3. **No active backlogs** is no longer stated anywhere on the resume (see editorial rule below);
+   eligibility is established by the registration form and transcript.
 4. PAN card upload is mandatory at registration, and both links (Accenture portal + college tracker) must
    be completed. PPT attendance is compulsory to sit the interviews.
+
+
+### Editorial rule: no eligibility restatement
+
+Nothing on the Accenture page repeats the drive's eligibility criteria as if it were a selling point.
+Removed deliberately:
+
+| Cut | Why |
+|---|---|
+| "applying for the Analyst role at Accenture" | The submission itself establishes the role; a summary should sell, not narrate the application |
+| "with no active backlogs" (summary) | Eligibility gate, proved by transcript and registration form, not resume copy |
+| "no active backlogs" (education block) | Same, and not a line recruiters expect on a resume |
+| Graduation year stated twice | Now appears once, in the education block where a reader structurally expects it |
+
+Audited programmatically after each build: `no active backlogs` x0, `applying for the Analyst role` x0,
+`graduating 2027` x1, `Final year` x1, `open to Accenture locations` x1.
+
+Two remaining repetitions are **summary-to-detail**, not eligibility restatement, and were left in place
+by design — flag them if you want either cut:
+- *"India's largest listed wealth manager"* appears in the summary (as the credibility hook) and again in
+  the experience descriptor (with the NSE/BSE listing and asset figure).
+- *"6,500-line ... platform"* appears in the summary and again in the project descriptor.
