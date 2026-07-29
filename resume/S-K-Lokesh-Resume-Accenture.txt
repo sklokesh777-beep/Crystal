@@ -1,0 +1,43 @@
+S K LOKESH
+Bengaluru, Karnataka, India | +91 99865 78113 | sklokesh777@gmail.com | linkedin.com/in/s-k-lokesh-a09160313
+
+SUMMARY
+Automated a recurring returns pack covering 120+ funds in Python (~90% less manual effort), reconciled 5+ years of transaction history for cost-basis accuracy, and modelled fee structures that surfaced INR 4.2 lakh of annual savings for a client - delivered during a finance internship at India's largest listed wealth manager. Independently built, audited and remediated a 6,500-line Python analytics platform, closing seven defects including an inverted risk structure in its own logic. Final-year B.Com student at St. Joseph's College of Commerce, Bengaluru, with an automation-first instinct, a controls mindset around reporting accuracy, and daily hands-on use of AI-enabled tools.
+
+EDUCATION
+Bachelor of Commerce (B.Com) | St. Joseph's College of Commerce (Autonomous), Bengaluru  |  2024 - 2027
+Affiliated to Bengaluru City University | NAAC A++ accredited | Final year, graduating 2027
+Relevant coursework: Financial Accounting, Corporate Finance, Investment Management, Business Statistics, Taxation, Economics
+
+Class XII - Pre-University (Commerce) | Seshadripuram Independent PU College | Karnataka State Board  |  93% | 2024
+
+Class X - Secondary School Certificate (SSLC) | St. Anthony's Boys' High School | Karnataka State Board  |  80% | 2022
+
+PROFESSIONAL EXPERIENCE
+360 ONE Portfolio Managers Limited | Finance Intern - Wealth Management  |  May - Jun 2026
+India's largest listed wealth manager (NSE/BSE listed; INR 6 lakh crore+ client assets) | Bengaluru, India
+- Process automation: Engineered a Python framework (pandas, openpyxl) that computed 6M/1Y/3Y/5Y rolling returns from NAV histories for 120+ funds across four market-cap categories, cutting manual data processing time by ~90% and standardising a recurring reporting deliverable.
+- Reconciliation & tax computation: Reconstructed 5+ years of transaction history from Script Cashflow reports to reconcile cost basis and compute LTCG/STCG liability on 6 equity instruments held by an HNI family portfolio, applying post-Budget 2024 rates.
+- Cost & fee analysis: Modelled PMS/AIF fee structures across 9 holdings (1.94% weighted-average fixed fee) and quantified an INR 4.2 lakh annual saving by moving a 10-fund portfolio from regular to direct plans.
+- Data management & client reporting: Maintained a 4,000+ security BSE/NSE dataset with Bloomberg BDH/BDP formulas, mapping holdings against model portfolios to generate Buy/Sell/Hold calls; co-authored a 30+ slide institutional deck on fund performance used by advisory teams with clients.
+
+Guanella Preethi Nivas (Preethi Nivas Trust) | Social Intern  |  May 2025 (60 hours)
+- Charitable home for 50+ destitute elderly residents (The Guanellian Society): rebuilt resident records, activity logs and medical-room inventory, and ran facility safety audits to support compliance, preparing the reporting decks used by staff.
+
+ANALYTICS & AUTOMATION PROJECT
+Equity Analytics & Automation Platform | Independent Python build, AI-assisted  |  2026
+6,500-line stack across 10 build iterations | run daily against a USD 1,000,000 simulated paper portfolio (14 closed trades over 6 sessions, ~1% risk each - a favourable-regime sample, not a proven edge)
+- Engineering & automation: Built a modular platform (pandas, NumPy, yfinance, Matplotlib) covering validated and cached data ingestion, 12 indicators, a backtest engine, risk-based position sizing, performance analytics and automated Markdown, PDF and Excel reporting.
+- Controls & defect remediation: Audited the system against its own risk policy and found reward:risk inverted at ~0.1:1 versus a 2.0 minimum; corrected the stop and target geometry, enforced 1%-risk sizing with a position cap, added a validation layer rejecting corrupt input data (>60% one-day jumps, High < Low) and repaired silent exception handling that had disabled a key filter - closing 7 defects, 3 of which left ~USD 107k of notional unprotected.
+- Validation & findings: Tested 7 strategies over 16.5 years (2010-2026) across 504- and 1,001-symbol universes and 8,600+ simulated trades with no look-ahead, walk-forward windows and Monte-Carlo sampling; reported that a multi-indicator confluence score did not lift win rate (flat 60-62%) and that a wider universe cut CAGR 5.3%→1.2%, with survivorship-bias caveats rather than optimised results.
+
+LEADERSHIP & EXTRACURRICULAR
+National Service Scheme (NSS), St. Joseph's College of Commerce | Treasurer (elected)  |  Bengaluru, India
+- Elected treasurer of a 100+ member unit; own the annual budget, fund allocation and expense records. Completed 2 rural exposure camps (8 days each) running community development surveys and field projects.
+
+CERTIFICATIONS & TECHNICAL SKILLS
+Certifications: CFA Level I candidate - Feb 2027 window (CFA Institute) | NISM Series-VII: Securities Operations & Risk Management - in preparation | Excel Skills for Business - Macquarie University (Coursera) | Soft Skills Development - NPTEL / SWAYAM (IIT)
+Automation & Analytics: Python (pandas, NumPy, openpyxl, Matplotlib), Advanced Excel (PivotTables, VLOOKUP, macros), Power BI, data validation and quality checks, reporting automation, process documentation
+Finance & Operations: Reconciliations, cost-basis analysis, fee and expense modelling, capital gains tax (LTCG/STCG), financial statement analysis, NAV-based performance reporting, Bloomberg Terminal (BDH/BDP)
+AI-Enabled Workflow: ChatGPT and Claude for code generation and review, research synthesis and document drafting | Strengths: attention to detail, deadline delivery, quality review, stakeholder communication, teamwork
+Languages: English (professional) | Tamil (native) | Kannada and Hindi (conversational) | open to Accenture locations across India
