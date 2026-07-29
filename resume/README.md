@@ -13,7 +13,9 @@ Senior Team Member, India (Bengaluru)** · Job ID 210772851 · Alternative Fund 
 | `S-K-Lokesh-Cover-Letter.pdf` | Attach alongside the resume where the form allows it |
 | `S-K-Lokesh-Cover-Letter.docx` / `.txt` | Editable Word master and plain text (for pasting into a form or email body) |
 | `preview.png` / `cover_preview.png` | Page images |
-| `resume_content.py` / `build_resume.py` | Resume content source + generator (`python3 build_resume.py`) |
+| `S-K-Lokesh-Resume-Accenture.pdf` / `.docx` / `.txt` | Accenture campus drive variant (Analyst, Career Level 11) |
+| `resume_content.py` / `build_resume.py` | JPMC content source + shared generator (`python3 build_resume.py resume_content`) |
+| `resume_content_accenture.py` | Accenture content source (`python3 build_resume.py resume_content_accenture`) |
 | `cover_letter_content.py` / `build_cover_letter.py` | Cover letter content + generator (`python3 build_cover_letter.py`) |
 
 Both documents share one typographic system (Liberation Serif / Times New Roman, same header block and
@@ -120,3 +122,42 @@ trades, and the page now reflects that instead.
   distributions, transfer agency and expense accruals. Your evidence today is adjacent (rolling
   returns from NAV histories, cost-basis reconciliation, PMS/AIF fee modelling), so read up on the
   mechanics before an interview.
+
+
+## Accenture campus drive variant
+
+Target: **Analyst, Career Level 11** (fixed INR 5,50,000 + 21% variable = INR 6,65,500 CTC), SJCC campus
+drive. Eligibility: final-year undergraduate graduating 2027, no active backlogs. Registration deadline
+**1 Aug 2026, 16:00 IST**; hiring date **17 Aug 2026**. Location not stated in the notification.
+
+The detailed JD did not decode (Word file arrived as raw bytes twice), so positioning was inferred from
+what *is* known: Accenture hires B.Com/BBA/B.Sc/BA finalists into CL11 Analyst roles that are
+predominantly Finance Operations and Financial Services delivery. Accenture's published analyst postings
+describe reconciliations, month-end close support, reporting, SLA/KPI delivery, transaction review,
+documentation, process-guideline adherence and identifying improvement areas. The bullets are therefore
+led with **process automation, reconciliation, cost & fee analysis, data management & client reporting,
+controls & defect remediation** — all genuine work, framed in the vocabulary of the role.
+
+Differences from the JPMC version:
+- Profile targets the Analyst role and states **graduating 2027, no active backlogs** (the two hard
+  eligibility gates) in the first sentence.
+- Project section retitled **Analytics & Automation Project**, project renamed *Equity Analytics &
+  Automation Platform*, and the controls/defect-remediation bullet promoted above the findings bullet.
+- Skills regrouped into *Automation & Analytics* and *Finance & Operations*; closes with openness to
+  Accenture locations across India, since the drive has not named one.
+- **Every factual claim, date and number is identical to the JPMC resume** — verified programmatically.
+  The placement notification states resume information is checked during background verification, so the
+  two documents must never diverge.
+
+If the JD turns out to be a technology or consulting track, the platform section should move above the
+internship; that is a five-minute change to `resume_content_accenture.py`.
+
+### Placement-drive specifics still to resolve
+
+1. **PAN card name.** The notification requires registering under the exact name on the PAN card, and the
+   resume is subject to background verification. The resume reads **S K LOKESH**. If the PAN shows the
+   initials expanded or the surname first, say so and the header will be matched to the legal name.
+2. **B.Com CGPA.** Accenture screens on degree, year of passing and CGPA. Still absent from both resumes.
+3. **No active backlogs** is asserted in the profile and education block — confirm it is accurate.
+4. PAN card upload is mandatory at registration, and both links (Accenture portal + college tracker) must
+   be completed. PPT attendance is compulsory to sit the interviews.

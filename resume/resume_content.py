@@ -35,6 +35,13 @@ Currency is written as "INR" rather than the rupee glyph so that every ATS
 parser and every PDF font renders it identically.
 """
 
+OUT_NAME = "S-K-Lokesh-Resume"
+PDF_SUBJECT = ("JPMorganChase 2027 CIB Research & Analytics, Securities Services "
+               "(Alternative Fund Services) - Bengaluru - Job ID 210772851")
+PDF_KEYWORDS = ("fund accounting, portfolio accounting, NAV production, financial reporting, "
+                "reconciliations, investor reporting, alternative fund services, controls, "
+                "compliance, data analytics, Python, Excel, Bloomberg, CFA Level I, NISM")
+
 NAME = "S K LOKESH"
 
 CONTACT = [

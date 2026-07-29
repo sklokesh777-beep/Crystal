@@ -38,10 +38,18 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
-from resume_content import CONTACT, NAME, PROFILE, SECTIONS
+import importlib
+import sys
+
+CONTENT_MODULE = sys.argv[1] if len(sys.argv) > 1 else "resume_content"
+_content = importlib.import_module(CONTENT_MODULE)
+CONTACT, NAME = _content.CONTACT, _content.NAME
+PROFILE, SECTIONS = _content.PROFILE, _content.SECTIONS
+PDF_SUBJECT = getattr(_content, "PDF_SUBJECT", "Resume")
+PDF_KEYWORDS = getattr(_content, "PDF_KEYWORDS", "")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT_BASE = os.path.join(HERE, "S-K-Lokesh-Resume")
+OUT_BASE = os.path.join(HERE, getattr(_content, "OUT_NAME", "S-K-Lokesh-Resume"))
 
 # --------------------------------------------------------------------------- #
 # typography
@@ -244,10 +252,8 @@ def build_pdf(path=OUT_BASE + ".pdf"):
         topMargin=MARGIN_TOP, bottomMargin=MARGIN_BOTTOM,
         title="S K Lokesh - Resume",
         author="S K Lokesh",
-        subject="JPMorganChase 2027 CIB Research & Analytics, Securities Services - Bengaluru",
-        keywords=("fund accounting, portfolio accounting, NAV, financial reporting, reconciliations, "
-                  "investor reporting, capital calls, distributions, alternative fund services, "
-                  "data analytics, Python, Excel, Bloomberg, CFA Level I"),
+        subject=PDF_SUBJECT,
+        keywords=PDF_KEYWORDS,
     )
     frame = Frame(MARGIN_X, MARGIN_BOTTOM, FRAME_W,
                   PAGE_H - MARGIN_TOP - MARGIN_BOTTOM, id="body",
@@ -420,8 +426,7 @@ def build_docx(path=OUT_BASE + ".docx"):
     props = d.core_properties
     props.author = "S K Lokesh"
     props.title = "S K Lokesh - Resume"
-    props.subject = ("JPMorganChase 2027 CIB Research & Analytics, "
-                     "Securities Services - Bengaluru")
+    props.subject = PDF_SUBJECT
     d.save(path)
     return path
 
